@@ -422,6 +422,8 @@ nav > * { pointer-events: auto; }
   border-radius: var(--radius-md);
   overflow: hidden;
   will-change: transform, opacity;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 280px;
 }
 
 .work-item-inner {
@@ -887,7 +889,7 @@ footer::before {
   position: fixed; inset: 0; z-index: 99990;
   display: flex; align-items: center; justify-content: center;
   opacity: 0; pointer-events: none; cursor: auto;
-  transition: opacity 0.4s var(--ease-out);
+  transition: opacity 0.25s var(--ease-out);
 }
 .video-lightbox.open {
   opacity: 1; pointer-events: auto; cursor: auto;
@@ -1180,7 +1182,7 @@ footer::before {
   </div>
 
 <div class="work-masonry" id="work-masonry">
-<div class="work-item" data-category="TVC" data-role="" data-brand="Tuborg">
+<div class="work-item" data-category="TVC" data-role="副导演｜创意策划｜制片人" data-brand="Tuborg">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/Tuborg.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1196,7 +1198,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="陪你一起长大">
+<div class="work-item" data-category="TVC" data-role="导演｜剪辑师" data-brand="陪你一起长大">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/《陪你一起长大》-初为父母特辑.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1213,7 +1215,7 @@ footer::before {
       </div>
     </div>
 
-<div class="work-item" data-category="TVC" data-role="" data-brand="亚洲渔港">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="亚洲渔港">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/亚洲渔港海参_不回复系列-灵魂时刻_完整版（带客户角标）.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1229,7 +1231,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="亚洲渔港">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="亚洲渔港">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/亚洲渔港海参_不回复系列_老板喊你_完整版（带客户角标）.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1245,7 +1247,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="亚洲渔港">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="亚洲渔港">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/亚洲渔港海参_免衣力系列_情侣_完整版(带客户角标）.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1261,7 +1263,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="亚洲渔港">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="亚洲渔港">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/亚洲渔港海参_免衣力系列_祖孙-完整版（带客户角标）.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1277,7 +1279,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="亚洲渔港">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="亚洲渔港">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/亚洲渔港海参_免衣力系列_老伴_完整版(带客户角标）.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1293,7 +1295,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="亚洲渔港">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="亚洲渔港">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/亚洲渔港海参_高胶原不叫冤_镜子_完整版（带客户角标）.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1309,7 +1311,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="亚洲渔港">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="亚洲渔港">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/亚洲渔港烤鱼_01_-完整版（带客户角标）.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1325,7 +1327,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="元气森林">
+<div class="work-item" data-category="TVC" data-role="副导演｜创意｜制片人" data-brand="元气森林">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/元气森林.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1341,7 +1343,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="唐家饼">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="唐家饼">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/唐家饼蝴蝶酥  横版.MP4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1357,7 +1359,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="威尔仕健身">
+<div class="work-item" data-category="TVC" data-role="导演｜剪辑师" data-brand="威尔仕健身">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/威尔仕健身_团课升级篇.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1373,7 +1375,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="康师傅">
+<div class="work-item" data-category="TVC" data-role="副导演｜制片人" data-brand="康师傅">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/康师傅冰红茶 燃炸街舞秀.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1389,7 +1391,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="植村秀">
+<div class="work-item" data-category="TVC" data-role="副导演" data-brand="植村秀">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/植村秀x这就是街舞.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1407,7 +1409,7 @@ footer::before {
     </div>
 
 
-<div class="work-item" data-category="TVC" data-role="" data-brand="知乎">
+<div class="work-item" data-category="TVC" data-role="创意策划｜制片人" data-brand="知乎">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/知乎丨吾辈问答 x 天猫双11·DIRCUT.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1423,7 +1425,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="">
+<div class="work-item" data-category="TVC" data-role="导演｜编剧｜创意" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/第一期0808.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1439,7 +1441,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="">
+<div class="work-item" data-category="TVC" data-role="导演｜编剧｜创意" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/第七期.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1455,7 +1457,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="">
+<div class="work-item" data-category="TVC" data-role="导演｜编剧｜创意" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/第三期final.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1471,7 +1473,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="">
+<div class="work-item" data-category="TVC" data-role="导演｜编剧｜创意" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/第二期0812.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1487,7 +1489,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="">
+<div class="work-item" data-category="TVC" data-role="导演｜编剧" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/第五期0901.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1503,7 +1505,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="">
+<div class="work-item" data-category="TVC" data-role="导演｜编剧｜创意" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/第八期最终.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1519,7 +1521,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="">
+<div class="work-item" data-category="TVC" data-role="导演｜编剧｜创意" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/第六期.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1535,7 +1537,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="">
+<div class="work-item" data-category="TVC" data-role="导演｜编剧｜创意" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/第四期0825.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1551,7 +1553,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="美克美家">
+<div class="work-item" data-category="TVC" data-role="副导演" data-brand="美克美家">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/美克美家《享受意外》_Final_完整版_0518.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1569,7 +1571,7 @@ footer::before {
     </div>
 
 
-<div class="work-item" data-category="TVC" data-role="" data-brand="起跑线">
+<div class="work-item" data-category="TVC" data-role="导演｜剪辑师" data-brand="起跑线">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/起跑线 相伴成长特辑.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1585,7 +1587,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="迪卡侬">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="迪卡侬">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/迪卡侬青少年秋季篇.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1602,7 +1604,7 @@ footer::before {
       </div>
     </div>
 
-<div class="work-item" data-category="TVC" data-role="" data-brand="随变">
+<div class="work-item" data-category="TVC" data-role="副导演｜创意｜制片人" data-brand="随变">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/随变.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1618,7 +1620,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="七时吉祥">
+<div class="work-item" data-category="TVC" data-role="副导演｜制片人" data-brand="七时吉祥">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/七时吉祥x是.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1634,7 +1636,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="中免日上">
+<div class="work-item" data-category="TVC" data-role="副导演｜创意策划｜制片人" data-brand="中免日上">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/中免日上x徐梦洁 .mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1650,7 +1652,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="今麦郎">
+<div class="work-item" data-category="TVC" data-role="副导演" data-brand="今麦郎">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/今麦郎凉白开 杨紫 喵咪喝水紫南-广告片餐饮食品视频-新片场.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1666,7 +1668,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="玫瑰是玫瑰">
+<div class="work-item" data-category="TVC" data-role="制片人" data-brand="玫瑰是玫瑰">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/把世界落在日常 x 玫瑰是玫瑰TVC-竖屏广告美妆护肤视频-新片场.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1682,7 +1684,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="今麦郎">
+<div class="work-item" data-category="TVC" data-role="副导演" data-brand="今麦郎">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/杨紫今麦郎凉白开-广告片TVC广告视频-新片场.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1698,7 +1700,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="今麦郎">
+<div class="work-item" data-category="TVC" data-role="副导演" data-brand="今麦郎">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/杨紫今麦郎凉白开举个水-广告片餐饮食品视频-新片场.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1714,7 +1716,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="甄稀">
+<div class="work-item" data-category="TVC" data-role="副导演｜制片人" data-brand="甄稀">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/甄稀 x 张颜齐final_小档.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1730,7 +1732,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="甄稀">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="甄稀">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/甄稀支棒x尹正Final.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1746,7 +1748,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="艾热">
+<div class="work-item" data-category="TVC" data-role="副导演｜创意｜制片人" data-brand="艾热">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/艾热.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1762,7 +1764,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="蓝河绵羊">
+<div class="work-item" data-category="TVC" data-role="创意｜制片人" data-brand="蓝河绵羊">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/蓝河绵羊奶粉x张雨绮-广告片餐饮食品视频-新片场.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1778,7 +1780,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="蘑菇街">
+<div class="work-item" data-category="TVC" data-role="副导演｜制片人" data-brand="蘑菇街">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/蘑菇街宝藏美妆师-广告片美妆护肤视频-新片场.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1794,7 +1796,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="飞喜">
+<div class="work-item" data-category="TVC" data-role="副导演｜创意" data-brand="飞喜">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/邂逅格拉斯的天然味道飞喜电子烟品牌TVC-广告片快消产品视频-新片场.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1810,7 +1812,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="TVC" data-role="" data-brand="随变">
+<div class="work-item" data-category="TVC" data-role="副导演｜制片人" data-brand="随变">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/随变bridge.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1826,7 +1828,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="AIGC" data-role="" data-brand="嘴嘴IP">
+<div class="work-item" data-category="AIGC" data-role="导演｜AIGCer" data-brand="嘴嘴IP">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/嘴嘴IP test_第一条视频.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1842,7 +1844,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="">
+<div class="work-item" data-category="短视频" data-role="编导｜剪辑师" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/1208双12预热v5.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1858,7 +1860,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="一叶子">
+<div class="work-item" data-category="短视频" data-role="编导｜摄像｜剪辑师" data-brand="一叶子">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/一叶子产品V3.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1890,7 +1892,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="">
+<div class="work-item" data-category="短视频" data-role="编导｜剪辑师" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/信息流_V3.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1906,7 +1908,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="">
+<div class="work-item" data-category="短视频" data-role="编导｜摄像｜剪辑师" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/信息流_V4.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1922,7 +1924,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="">
+<div class="work-item" data-category="短视频" data-role="编导｜摄像｜剪辑师" data-brand="">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/千川预热_V1.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1938,7 +1940,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="有翡">
+<div class="work-item" data-category="短视频" data-role="编导｜剪辑师" data-brand="有翡">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/有翡_V1.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1954,7 +1956,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="汤包大师">
+<div class="work-item" data-category="短视频" data-role="导演｜创意" data-brand="汤包大师">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/汤包大师篇.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1970,7 +1972,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="经典汤包">
+<div class="work-item" data-category="短视频" data-role="导演｜创意" data-brand="经典汤包">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/经典汤包_产品展示片1.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -1986,7 +1988,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="经典汤包">
+<div class="work-item" data-category="短视频" data-role="导演｜创意" data-brand="经典汤包">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/经典汤包_产品展示片2.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -2002,7 +2004,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="超级品牌日">
+<div class="work-item" data-category="短视频" data-role="编导｜剪辑师" data-brand="超级品牌日">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/超级品牌日_V1.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -2018,7 +2020,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="超级品牌日">
+<div class="work-item" data-category="短视频" data-role="编导｜摄像｜剪辑师" data-brand="超级品牌日">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/超级品牌日_V2.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -2034,7 +2036,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="韩束">
+<div class="work-item" data-category="短视频" data-role="编导｜摄像｜剪辑师" data-brand="韩束">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/韩束产品_V1.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -2050,7 +2052,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="韩束">
+<div class="work-item" data-category="短视频" data-role="编导｜摄像｜剪辑师" data-brand="韩束">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/韩束产品_V3.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -2082,7 +2084,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="韩束">
+<div class="work-item" data-category="短视频" data-role="编导｜摄像｜剪辑师" data-brand="韩束">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/韩束复古变装_V4.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -2098,7 +2100,7 @@ footer::before {
         </div>
       </div>
     </div>
-<div class="work-item" data-category="短视频" data-role="" data-brand="鹿鼎记">
+<div class="work-item" data-category="短视频" data-role="编导｜剪辑师" data-brand="鹿鼎记">
       <div class="work-item-inner">
         <video class="work-item-video" preload="none" src="videos/鹿鼎记_V1.mp4" muted loop playsinline aria-hidden="true"></video>
         <button class="work-play-btn" aria-label="Play video">
@@ -2445,13 +2447,13 @@ workItems.forEach(item => {
       rotateX: tiltX, rotateY: tiltY,
       x: pushX, y: pushY,
       scale: 0.97 - strength * 0.03,
-      duration: 0.4, ease: 'power2.out',
+      duration: 0.28, ease: 'power3.out',
       transformPerspective: 800,
       transformOrigin: 'center center'
     });
     gsap.to(media, {
       x: dx * 0.04, y: dy * 0.04,
-      duration: 0.5, ease: 'power2.out'
+      duration: 0.32, ease: 'power2.out'
     });
   }
 
@@ -2471,11 +2473,11 @@ workItems.forEach(item => {
     if (mimosaRAF) { cancelAnimationFrame(mimosaRAF); mimosaRAF = null; }
     gsap.to(inner, {
       rotateX: 0, rotateY: 0, x: 0, y: 0, scale: 1,
-      duration: 0.9, ease: 'elastic.out(1, 0.5)'
+      duration: 0.65, ease: 'elastic.out(1, 0.45)'
     });
     gsap.to(media, {
       x: 0, y: 0,
-      duration: 0.7, ease: 'elastic.out(1, 0.4)'
+      duration: 0.55, ease: 'elastic.out(1, 0.35)'
     });
   });
 });
@@ -2666,24 +2668,42 @@ if (backToTop) {
 
 
 /* ══════════════════════════════════════════════════════════════
-   WORK FILTER — instant toggle (columns layout can't animate)
+   WORK FILTER — smooth opacity transition
 ══════════════════════════════════════════════════════════════ */
 const filterBtns = document.querySelectorAll('.work-filter-btn');
 const workItemsAll = document.querySelectorAll('.work-item');
 
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    // Toggle: if already active, deselect and show all
     if (btn.classList.contains('active')) {
       btn.classList.remove('active');
-      workItemsAll.forEach(item => { item.style.display = ''; });
+      gsap.to(workItemsAll, { opacity: 1, scale: 1, duration: 0.35, ease: 'power2.out', stagger: 0.015,
+        onStart: function() { this.targets().forEach(t => t.style.pointerEvents = ''); },
+        onComplete: function() { this.targets().forEach(t => t.style.display = ''); }
+      });
       return;
     }
     filterBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const filter = btn.dataset.filter;
+    var visible = [];
+    var hidden = [];
     workItemsAll.forEach(item => {
-      item.style.display = (item.dataset.category === filter) ? '' : 'none';
+      if (item.dataset.category === filter) {
+        visible.push(item);
+      } else {
+        hidden.push(item);
+      }
+    });
+    // Hide non-matching instantly, then fade in matching
+    gsap.to(hidden, { opacity: 0, scale: 0.96, duration: 0.25, ease: 'power2.in', stagger: 0.01,
+      onStart: function() { this.targets().forEach(t => t.style.pointerEvents = 'none'); },
+      onComplete: function() { this.targets().forEach(t => t.style.display = 'none'); }
+    });
+    gsap.to(visible, { opacity: 1, scale: 1, duration: 0.35, ease: 'power2.out', stagger: 0.015, delay: 0.1,
+      onStart: function() {
+        this.targets().forEach(function(t) { t.style.display = ''; t.style.pointerEvents = ''; });
+      }
     });
   });
 });
@@ -2746,7 +2766,17 @@ filterBtns.forEach(btn => {
   lbClose.addEventListener('click', function(e) { e.stopPropagation(); closeLightbox(); });
   lbBg.addEventListener('click', closeLightbox);
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+            if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+              closeLightbox();
+              return;
+            }
+            if (e.code === 'Space' && lightbox.classList.contains('open')) {
+              var activeEl = document.activeElement;
+              var isInput = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.isContentEditable);
+              if (isInput) return;
+              e.preventDefault();
+              lbVideo.paused ? lbVideo.play().catch(function(){}) : lbVideo.pause();
+            }
   });
 
   // Attach to every work item — click to open lightbox
