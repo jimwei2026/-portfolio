@@ -422,8 +422,6 @@ nav > * { pointer-events: auto; }
   border-radius: var(--radius-md);
   overflow: hidden;
   will-change: transform, opacity;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 280px;
 }
 
 .work-item-inner {
@@ -2766,17 +2764,9 @@ filterBtns.forEach(btn => {
   lbClose.addEventListener('click', function(e) { e.stopPropagation(); closeLightbox(); });
   lbBg.addEventListener('click', closeLightbox);
   document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && lightbox.classList.contains('open')) {
-              closeLightbox();
-              return;
-            }
-            if (e.code === 'Space' && lightbox.classList.contains('open')) {
-              var activeEl = document.activeElement;
-              var isInput = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.isContentEditable);
-              if (isInput) return;
-              e.preventDefault();
-              lbVideo.paused ? lbVideo.play().catch(function(){}) : lbVideo.pause();
-            }
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+      closeLightbox();
+    }
   });
 
   // Attach to every work item — click to open lightbox
