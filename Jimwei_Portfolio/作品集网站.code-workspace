@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "作品集网站",
+			"path": ".."
+		},
+		{
+			"name": "作品集视频素材",
+			"path": "../../作品集视频素材"
+		},
+		{
+			"name": "cc test -deepseekv4",
+			"path": "../../../../../cc test -deepseekv4"
+		}
+	],
+	"settings": {}
+}

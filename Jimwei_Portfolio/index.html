@@ -170,14 +170,16 @@ nav.scrolled {
 }
 nav > * { pointer-events: auto; }
 
-.nav-logo-slot {
-  width: 40px; height: 40px;
-  border-radius: 50%; overflow: hidden;
+.nav-logo {
+  font-family: var(--font); font-weight: 600;
+  font-size: 0.95rem; letter-spacing: 0.06em;
+  color: var(--fg);
+  text-decoration: none;
   flex-shrink: 0;
-  transition: transform 0.3s var(--ease-spring);
+  transition: opacity 0.25s;
 }
-.nav-logo-slot:hover { transform: scale(1.08); }
-.nav-logo-slot img { width: 100%; height: 100%; object-fit: cover; }
+.nav-logo:hover { opacity: 0.7; }
+.nav-logo .logo-w { color: #2563eb; }
 
 .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
 .nav-links a {
@@ -327,14 +329,14 @@ nav > * { pointer-events: auto; }
 }
 #side-nav-panel.open .side-nav-foot { opacity: 1; }
 
-/* ═══ HERO — fullscreen video ═══════════════════════════════════════ */
+/* ═══ HERO — natural-size video ═══════════════════════════════════════ */
 #hero {
-  position: relative; width: 100%; height: 100vh;
+  position: relative; width: 100%;
   overflow: hidden; background: var(--bg);
 }
 #hero video {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; z-index: 0;
+  display: block; width: 100%; height: auto;
+  z-index: 0;
 }
 #hero::after {
   content: ''; position: absolute; inset: 0; z-index: 1;
@@ -344,6 +346,36 @@ nav > * { pointer-events: auto; }
     rgba(0,0,0,0.10) 60%,
     rgba(0,0,0,0.32) 100%);
 }
+.hero-cta {
+  position: absolute; bottom: clamp(32px, 6vh, 56px); left: 50%; transform: translateX(-50%);
+  z-index: 3;
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 12px 28px;
+  border-radius: 40px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.2);
+  font-family: var(--font); font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  transition: all 0.35s var(--ease-out);
+  pointer-events: auto;
+}
+.hero-cta:hover {
+  background: rgba(255,255,255,0.22);
+  border-color: rgba(255,255,255,0.4);
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+.hero-cta:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.8);
+  outline-offset: 4px;
+}
+.hero-cta svg { width: 16px; height: 16px; transition: transform 0.3s var(--ease-out); }
+.hero-cta:hover svg { transform: translateY(3px); }
+
 .hero-scroll-hint {
   position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
   z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 10px;
@@ -402,7 +434,7 @@ nav > * { pointer-events: auto; }
 
 /* ═══ WORK SECTION — masonry waterfall ══════════════════════════════ */
 #work {
-  padding: 120px 56px 140px;
+  padding: 80px 56px 140px;
   background: var(--bg);
 }
 
@@ -1127,9 +1159,7 @@ footer::before {
 
 <!-- ═══ TOP NAV ══════════════════════════════════════════════════════ -->
 <nav aria-label="Main navigation">
-  <div class="nav-logo-slot">
-    <img src="logo.png" alt="Be Water">
-  </div>
+  <a class="nav-logo" href="#hero" aria-label="Back to top">BE <span class="logo-w">W</span>ATER</a>
   <ul class="nav-links">
     <li><a href="#work"       data-i18n="nav_work">Work</a></li>
     <li><a href="#about"      data-i18n="nav_about">About</a></li>
@@ -1161,6 +1191,13 @@ footer::before {
     <source src="hero视频动画.mp4" type="video/mp4">
     <p>Your browser does not support video. This is a fullscreen background video of the designer's work.</p>
   </video>
+
+  <a href="#work" class="hero-cta">
+    <span>View All Works</span>
+    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M10 4v12M4 10l6 6 6-6"/>
+    </svg>
+  </a>
 </section>
 
 
